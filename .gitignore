@@ -1,0 +1,12 @@
+# Build
+public/js/esm/
+public/js/system/
+
+# Mac
+.DS_Store
+._*
+.vscode/
+# NodeJS
+node_modules/
+npm-debug.log
+flow-typed/

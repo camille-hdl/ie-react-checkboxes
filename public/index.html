@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>react checkboxes</title>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+    </head>
+    <body>
+        <script>
+            (function() {
+                window.esDynamicImport = true;
+                // this will throw if dynamic import is not supported
+                import("/js/esm/index.js");
+            })();
+        </script>
+        <!-- No ES6 modules support : fallback to systemJS -->
+        <script>
+            if (!window.esDynamicImport) {
+                const systemJsLoaderTag = document.createElement('script');
+                systemJsLoaderTag.src = 'https://unpkg.com/systemjs@4.1.0/dist/s.min.js';
+                systemJsLoaderTag.addEventListener('load', function () {
+                    System.import("/js/system/index.js");
+                });
+                document.head.appendChild(systemJsLoaderTag);
+            }
+        </script>
+        <div id="app-container"></div>
+    </body>
+</html>
